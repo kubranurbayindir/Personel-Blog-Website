@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kübra Nur BAYINDIR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/style.css" />
+    
+        <script>
+            function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";}
+        </script>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            body {
+              margin: 0;
+              font-family: Arial;
+            }
+            .column {
+              float: left;
+              width: 25%;
+              padding: 10px;
+            }
+            .column img {
+              opacity: 0.8; 
+              cursor: pointer; 
+            }
+
+            .column img:hover {
+              opacity: 1;
+            }
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            .container {
+              position: relative;
+              display: none;
+            }
+            #imgtext {
+              position: absolute;
+              bottom: 15px;
+              left: 15px;
+              color: white;
+              font-size: 20px;
+            }
+            .closebtn {
+              position: absolute;
+              top: 10px;
+              right: 15px;
+              color: white;
+              font-size: 35px;
+              cursor: pointer;
+            }
+
+</style>
+	</head>
+	<body>
+			<header id="header">
+				<div class="inner">
+					<nav id="nav">
+                        <a href="index.html" >Home</a>
+						<a href="about.html">About Me</a>
+						<a href="portfolio.html">Portfolio</a>
+						<a href="touch.html">Get In Touch</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			<section id="banner">
+				<div class="inner">
+					<h1 >PORTFOLIO  <span> <br />
+					</span></h1>
+					
+				</div>
+			</section>
+			<section id="main" >
+				<div class="inner">
+                    <div style="text-align:center">
+  <h2>☾ Gallery ☽ </h2>
+  <p>Click on the images below:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/google.jpg" alt="SPEAKER IN ATO CONGRESIUM" style="width:250px; height:250px;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/x.jpg" alt="ERASMUS+ REFUGEE FOR TEACHER APPLICATION TEAM"  style="width:250px; height:250px;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/mec.jpg" alt="MEC TEAM" style="width:250px; height:250px;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/btek.jpg" alt="PHOTOGRAPH" style="width:250px; height:250px;" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container" style="margin-bottom:30px;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>      
+                    </section>
+					</div>
+     
+                       <div class="footer">
+  <p style="margin-left:100px; padding-top:-30px;text-align: left; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;  ">Telif Hakkı © 2020 Kübra Nur BAYINDIR ™</p>
+</div>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/style.js"></script>
+
+	</body>
+</html>
